@@ -14,15 +14,19 @@ giturl=$4
 source=$5
 build=$6
 
-# Check to see if repo exists. If not, git clone it
-if [ ! -d $source ]; then
-    echo "cloning into $giturl"
-    ssh -i $(echo $(pwd))/ssh_key git clone $giturl $source
-fi
+echo "cleaning up..."
+rm $source
+
+echo "cloning into $giturl"
+ssh -i $(echo $(pwd))/ssh_key git clone $giturl $source
 
 # Git checkout appropriate branch, pull latest code
 cd $source
+
+echo "checking out $branch..."
 git checkout $branch
+
+echo "pulling $branch..."
 git pull origin $branch
 cd -
 
