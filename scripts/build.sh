@@ -13,6 +13,7 @@ owner=$3
 giturl=$4
 source=$5
 build=$6
+export GIT_SSH=$(echo $(pwd))/scripts/git-ssh.sh
 
 if [ -d $source ]; then
   echo "cleaning up..."
@@ -20,7 +21,7 @@ if [ -d $source ]; then
 fi 
 
 echo "cloning into $giturl"
-ssh -i $(echo $(pwd))/ssh_key git clone $giturl $source
+git clone $giturl $source
 
 # Git checkout appropriate branch, pull latest code
 cd $source
