@@ -14,8 +14,10 @@ giturl=$4
 source=$5
 build=$6
 
-echo "cleaning up..."
-rm $source
+if [ -d $source ]; then
+  echo "cleaning up..."
+  rm -Rf $source
+fi 
 
 echo "cloning into $giturl"
 ssh -i $(echo $(pwd))/ssh_key git clone $giturl $source
