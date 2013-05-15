@@ -31,6 +31,6 @@ git pull origin $branch
 cd -
 
 # Run jekyll
-cd $source
-jekyll $source $build --no-server --no-auto
+script/bootstrap
+script/build
 cd -
