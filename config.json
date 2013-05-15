@@ -1,0 +1,17 @@
+{
+    "gh_server": "github.com",
+    "temp": "./tmp",
+    "scripts": {
+        "build": "./tmp/script/build",
+        "publish": "./tmp/script/publish"
+    },
+    "email": {
+        "user": "", 
+        "password": "", 
+        "host": "", 
+        "ssl": true
+    },
+    "accounts": [
+        "benbalter"
+    ]
+}
