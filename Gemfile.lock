@@ -1,0 +1,8 @@
+GEM
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler
