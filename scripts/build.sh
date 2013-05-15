@@ -30,7 +30,6 @@ git checkout $branch
 
 echo "pulling $branch..."
 git pull origin $branch
-cd -
 
 # Run jekyll
 script/bootstrap
