@@ -16,6 +16,7 @@ build=$6
 
 # Check to see if repo exists. If not, git clone it
 if [ ! -d $source ]; then
+    echo "cloning into $giturl"
     ssh -i $(echo $(pwd))/ssh_key git clone $giturl $source
 fi
 
