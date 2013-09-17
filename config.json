@@ -2,8 +2,8 @@
     "gh_server": "github.com",
     "temp": "./tmp",
     "scripts": {
-        "build": "./tmp/script/build",
-        "publish": "./tmp/script/publish"
+        "build": "./scripts/build.sh",
+        "publish": "./scripts/publish.sh"
     },
     "email": {
         "user": "", 
@@ -12,6 +12,6 @@
         "ssl": true
     },
     "accounts": [
-        "benbalter"
+        "joallard"
     ]
 }
