@@ -1,3 +1,16 @@
+"Build-hook"
+============
+This project is a fork of `jekyll-hook`, a server that listens for a
+webhook from Github to build a Jekyll server. The aim is to have it
+render any type of Ruby (Padrino-style) compiled website from Heroku.
+
+This is a work on progress, and contributions and help are gladly welcome.
+
+## Do not base
+As this will eventually be a Pull Request, I rebase frequently. You are
+warned.
+
+
 # jekyll-hook
 
 A server that listens for webhook posts from GitHub, generates a website with Jekyll, and moves it somewhere to be published. Use this to run your own GitHub Pages-style web server. Great for when you need to serve your websites behind a firewall, need extra server-level features like HTTP basic auth (see below for an NGINX config with basic auth), or want to host your site directly on a CDN or file host like S3. It's cutomizable with two user-configurable shell scripts and a config file.
